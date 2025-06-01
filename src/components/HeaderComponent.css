@@ -1,0 +1,21 @@
+.header {
+    background-color: rgb(60, 205, 205);
+    color: white;
+    border-radius: 20px;
+
+    .title {
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header-list {
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+    .link {
+        color: white;
+    }
+}
