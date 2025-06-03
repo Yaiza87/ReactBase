@@ -1,8 +1,8 @@
 function Login(props) {
 
   const user = {
-    username: "Adrián",
-    email: "adrian@email.com"
+    username: "Alumn@",
+    email: "alumno@email.com"
   }
 
 const handleClick = () => {
