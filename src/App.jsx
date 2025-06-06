@@ -8,6 +8,9 @@ import Login from './components/Login';
 import ListModules from './components/ListModules';
 import ListCurso from './components/ListCurso';
 
+// Esta es la función principal de nuestra aplicación.
+// En React, todo comienza con un componente raíz como este llamado App.
+
 function App() {
 
   // let number = 0;
@@ -50,10 +53,10 @@ function App() {
 
   return (
     <>
-      <HeaderComponent greetings={greetings} links={links}></HeaderComponent>
+      <HeaderComponent greetings={greetings} links={links}></HeaderComponent> {/*Nuestro componente importado para la cabecera de nuestra App.*/}
 
-      <main className='main-content'>
-        <h2 onClick={holaMundo}> ¡Hola Mundo!</h2>
+      <main className='main-content'> {/*Contenido principal de la página.*/}
+        <h2 onClick={holaMundo}> ¡Hola Mundo!</h2> {/*Texto de bienvenida.*/}
         
         {user.username && <h2>Bienvenid@ {user.username}</h2>} {/*Renderización condicional*/}
 
@@ -86,7 +89,7 @@ function App() {
         <input value={myValue} placeholder={myPlaceholder} type='text' onChange={handleChange} />
         <br></br>
         <br></br>
-        <ButtonComponent></ButtonComponent>
+        <ButtonComponent/> {/*Nuestro componente importado que representa un botón.*/}
       </main>
     </>
   );
