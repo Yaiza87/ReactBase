@@ -1,3 +1,12 @@
+
+/*
+Integrantes: Borja Moreno Galván, Héctor Santana Camacho, Jenifer del Cristo Guedes Santana,
+María Concepción Dacosta Villaescusa, Miguel Ángel Sequeira Sarmiento y Yaiza del Rosario Guedes Santana.
+Ciclo: Desarrollo de Aplicaciones Web
+Módulo: DEW
+Exposición: React
+Grupo nº: 1 
+*/
 import { useState } from 'react'
 import './App.css'
 import HeaderComponent from './components/HeaderComponent';
@@ -13,11 +22,16 @@ function App() {
 
   // let number = 0;
 
+  // Variables de estado
   const [number, setNumber] = useState(0);
   const [myValue, setMyValue] = useState("");
+
+  //Variable normal
   let myPlaceholder = "Escribe aquí";
 
   const [greetings, setGreetings] = useState("¡Bienvenidos a nuestra web!")
+
+  // Lista de los links de cabecera
   const links = {
     home: "Home",
     blog: "Blog",
@@ -25,26 +39,35 @@ function App() {
     contact: "Contact us" 
   }
 
+  // Para la renderización condicional
   const condition = true;
   const condition2 = false;
 
-  const [user, setUser] = useState({}) 
+  // Variable dinámica para el usuario
+  const [user, setUser] = useState({})
 
+  /* Para setear el usuario se pasará como prop al 
+     componente login para recibir los datos del usuario 
+     debe ser una función para que el hijo le pueda
+     devolver el valor al padre */
   const login = (userInfo) => {
     console.log(userInfo);
     setUser(userInfo)
   }
 
+  // Añadir uno cada vez que se clickea en el h2 con texto number
   const addOne = () => {
     // number++;
     setNumber(number + 1);
     console.log(number);
   }
 
+
   const holaMundo = () => {
     console.log("¡¡¡Hola Mundo!!!");
   }
 
+  // Captura del evento onchange del input text
   const handleChange = (e) => {
     console.log(e.target.value);
     setMyValue(e.target.value);

@@ -1,4 +1,12 @@
-import React from 'react';
+
+/*
+Integrantes: Borja Moreno Galván, Héctor Santana Camacho, Jenifer del Cristo Guedes Santana,
+María Concepción Dacosta Villaescusa, Miguel Ángel Sequeira Sarmiento y Yaiza del Rosario Guedes Santana.
+Ciclo: Desarrollo de Aplicaciones Web
+Módulo: DEW
+Exposición: React
+Grupo nº: 1 
+*/
 import './ListCurso.css';
 
 /* Renderización de listas mediante un array de objetos*/
@@ -23,6 +31,9 @@ function ListCurso() {
         },
     ];
 
+    /* Renderizado dinámico en react usando de componentes (Renderizado de listas)
+       El código recorre el array cursos y, para cada elemento, devuelve un componente 
+       JSX que representa un ítem de lista (<li>) */
     const HTMLCursos = cursos.map((curso) => {
         return (
             <li key={curso.id}>
