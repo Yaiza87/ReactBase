@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import HeaderComponent from './components/HeaderComponent';
 import ButtonComponent from './components/ButtonComponent';
@@ -16,7 +14,7 @@ function App() {
   // let number = 0;
 
   const [number, setNumber] = useState(0);
-  const [myValue, setmyValue] = useState("");
+  const [myValue, setMyValue] = useState("");
   let myPlaceholder = "Escribe aquí";
 
   const [greetings, setGreetings] = useState("¡Bienvenidos a nuestra web!")
@@ -49,6 +47,7 @@ function App() {
 
   const handleChange = (e) => {
     console.log(e.target.value);
+    setMyValue(e.target.value);
   }
 
   return (

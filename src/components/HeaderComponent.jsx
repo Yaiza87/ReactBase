@@ -1,5 +1,6 @@
 import "./HeaderComponent.css";
 
+
 function HeaderComponent (props) {
     const {greetings, links} = props;
 
